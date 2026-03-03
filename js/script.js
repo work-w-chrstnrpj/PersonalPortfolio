@@ -1,14 +1,7 @@
 // typing animation
 
-var typed = new Typed(".typing", {
-    strings: ["", "Tech Enthusiast", "Web Developer", "Web Designer", "QA Tester", "Freelancer"],
-    typeSpeed: 100,
-    backSpeed: 60,
-    loop: true
-})
-
 var typed = new Typed(".typing-2", {
-    strings: ["", "I fell in love with web development.", "I love to learn new things everyday.", "So, how can I help you?"],
+    strings: ["", "I love web development.", "I love to learn new things everyday.", "So, how can I help you?"],
     typeSpeed: 100,
     backSpeed: 60,
     loop: true
