@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C's Tech Haven</title>
+    <link rel="icon" href="images/icon.png" type="image/icon type">
+    <!-- ========== CSS Files ========== -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-switcher.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <!-- for sending message-->
+    <script type="text/javascript" 
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3.11.0/dist/email.min.js">
+    </script>
+
+    
+</head>
+<body>
+    <!-- ========== Main Container Start ========== -->
+    <div class="main-container">
+
+        <!-- ========== Aside Start ========== -->
+        <div class="aside">
+            <div class="logo">
+                <a href="#home" onclick="updateAndReload(); return false;" style="color: var(--skin-color)"><span>C</span>'s TechHaven</a>
+            </div>
+            <div class="nav-toggler">
+                <span></span>
+            </div>
+            <ul class="nav">
+                <li><a href="#home" class="active"><i class="fa fa-home"></i><span>Home</span></a></li>
+                <li><a href="#about"><i class="fa fa-user"></i><span> About</span></a></li>
+                <li><a href="#service"><i class="fa fa-list"></i><span>Services</span></a></li>
+                <li><a href="#portfolio"><i class="fa fa-briefcase"></i><span> Portfolio</span></a></li>
+                <li><a href="#contact"><i class="fa fa-comments"></i><span>Contacts</span></a></li>
+            </ul>
+        </div>
+        <!-- ========== Aside End ========== -->
+
+        <!-- ========== Main Content Start ========== -->
+        <div class="main-content">
+            <!-- ========== Home Section Start ========== -->
+            <section class="home active section" id="home">
+                <div class="container">
+                    <div class="row">
+                        <div class="home-info padd-15">
+                            <h3 class="hello">Hello, my name is <span class="name">Christian Paje</span></h3>
+                            <h3 class="my-profession">I'm a <span class="typing"></span></h3>
+                            <p>I'm a tech enthusiast. I'm passionate about building websites, providing technical solutions, and helping people to solve their problems.</p>
+                            <a href="#" class="btn" id="dl-cv">Download CV</a>
+                        </div>
+                        <div class="home-img padd-15">
+                            <img src="images/me-1.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>   
+            <!-- ========== Home Section End ========== -->
+
+            <!-- ========== About Section Start ========== -->
+            <section class="about section" id="about">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title padd-15">
+                            <h2>About Me</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="about-content padd-15">
+                            <div class="row">
+                                <div class="about-text padd-15">
+                                    <h3>Hi, I'm Christian! <span class="typing-2"> </span></h3>
+                                    <p>I am a goal-oriented individual with a background in mechanical engineering and computer science. I hold a Bachelor’s in Mechanical Engineering from the Polytechnic University of the Philippines, where I received the R.A. 7687 DOST Scholarship and CareerUPrime Scholarships and won the Best Thesis Award for my HHO Generator research. I have experience in project management from an internship with the International Project Management Association and I am also a licensed mechanical engineer and certified safety officer.
+                                    <br>
+                                    <br>Recently, I have been focusing on computer science, learning through CS50 materials, and developing skills in C, Python, SQL, JavaScript, HTML5, CSS, Flask, Bootstrap, and Django. My passion for technology drives me to pursue a career in the tech industry, where I am eager to contribute to innovative and forward-thinking organizations.</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="personal-info padd-15">
+                                    <div class="row padd-15">
+                                        <div class="info-item">
+                                            <p>Birthday : <span>16 Jan 2000</span></p>
+                                        </div>
+                                        <div class="info-item">
+                                            <p>Age : <span id="age"></span></p>
+                                        </div>
+                                        <div class="info-item">
+                                            <p>LinkedIn : <span><a href="https://www.linkedin.com/in/christian-paje-rmee-so2/" target="_blank">Christian Paje</a></span></p>
+                                        </div>
+                                        <div class="info-item">
+                                            <p>GitHub : <span><a href="https://github.com/chrixcrusher" target="_blank">chrixcrusher</a></span></p>
+                                        </div>
+                                        
+                                        <div class="info-item">
+                                            <p>Upwork : <span><a href="https://www.upwork.com/freelancers/~01925b526558fb4fb7" target="_blank">Christian P.</a></span></p>
+                                        </div>
+                                        <div class="info-item">
+                                            <p>Freelance : <span>Available</span></p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="buttons padd-15">
+                                            <a href="#contact" data-section-index="1" class="btn hire-me">Hire Me</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="skills padd-15">
+                                    <div class="row">
+                                        <div class="container-skills">
+                                            <button class="item-skills" style="background-color: #004F6C">C</button>
+                                            <button class="item-skills" style="background-color: #306998">Python</button>
+                                            <button class="item-skills" style="background-color: #00618A">SQL</button>
+                                            <button class="item-skills" style="background-color: #E44D26">HTML</button>
+                                            <button class="item-skills" style="background-color: #1572B6">CSS</button>
+                                            <button class="item-skills" style="background-color: #C6A700">JavaScript</button>
+                                            <button class="item-skills" style="background-color: #092D23">Django</button>
+                                            <button class="item-skills" style="background-color: #563D7C">Bootstrap</button>
+                                            <button class="item-skills" style="background-color: #61DAFB">React</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="education padd-15">
+                                    <h3 class="title">Education</h3>
+                                    <div class="row">
+                                        <div class="timeline-box padd-15">
+                                            <div class="timeline shadow-dark">
+                                                <!-- ========== timeline item ========== -->
+                                                <div class="timeline-item">
+                                                    <div class="circle-dot"></div>
+                                                    <h3 class="timeline-date">
+                                                        <i class="fa fa-calendar"></i> 2024 - Present
+                                                    </h3>
+                                                    <h4 class="timeline-title">Graduate Diploma in Computer Science</h4>
+                                                    <p class="timeline-text">University of the Philippines Open University System</p>
+                                                </div>
+                                                <!-- ========== timeline item ========== -->
+                                                <div class="timeline-item">
+                                                    <div class="circle-dot"></div>
+                                                    <h3 class="timeline-date">
+                                                        <i class="fa fa-calendar"></i> 2018 - 2022
+                                                    </h3>
+                                                    <h4 class="timeline-title">Bachelor of Science in Mechanical Engineering</h4>
+                                                    <p class="timeline-text">Polytechnic University of the Philippines</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="experience padd-15">
+                                    <h3 class="title">Experience & Certifications</h3>
+                                    <div class="row">
+                                        <div class="timeline-box padd-15">
+                                            <div class="timeline shadow-dark">
+                                                <!-- ========== timeline item ========== -->
+                                                <div class="timeline-item">
+                                                    <div class="circle-dot"></div>
+                                                    <h3 class="timeline-date">
+                                                        <i class="fa fa-calendar"></i> Sep 2024
+                                                    </h3>
+                                                    <h4 class="timeline-title">CS50w: Web Programming with Python and JavaScript</h4>
+                                                    <p class="timeline-text">This course is a comprehensive introduction to web development using Python and JavaScript. It covers HTML, CSS, and JavaScript programming languages, as well as the fundamentals of web development.
+                                                        <br>
+                                                        <br><a href="https://github.com/chrixcrusher/syncstock" target="_blank" class="c50x-link">CS50w GitHub final project repository</a>
+                                                        <br><a href="https://certificates.cs50.io/2dd99ae4-6a1f-4069-ab31-9d5936f40c9c.pdf?size=letter" target="_blank" class="c50x-link">CS50w Certificate of Completion</a>
+                                                    </p>
+                                                </div>     
+                                                <!-- ========== timeline item ========== -->
+                                                <!-- ========== timeline item ========== -->
+                                                <div class="timeline-item">
+                                                    <div class="circle-dot"></div>
+                                                    <h3 class="timeline-date">
+                                                        <i class="fa fa-calendar"></i> July 2024
+                                                    </h3>
+                                                    <h4 class="timeline-title">freeCodeCamp's JavaScript Algorithms and Data Structures Certification</h4>
+                                                    <p class="timeline-text">Finished the freeCodeCamp's course focuses on gaining proficiency in JavaScript fundamentals, including variables, arrays, objects, loops, functions, and DOM manipulation. Explore advanced topics such as Object-Oriented Programming (OOP), Functional Programming, algorithmic thinking, local storage management, and data retrieval through APIs.
+                                                        <br>
+                                                        <br><a href="https://www.freecodecamp.org/certification/fcc3d695264-774f-4c64-890b-632ff188914a/javascript-algorithms-and-data-structures-v8" target="_blank" class="c50x-link">JavaScript Algorithms and Data Structures Certification Certificate of Completion</a>
+                                                    </p>
+                                                </div>     
+                                                <!-- ========== timeline item ========== -->
+                                                <div class="timeline-item">
+                                                    <div class="circle-dot"></div>
+                                                    <h3 class="timeline-date">
+                                                        <i class="fa fa-calendar"></i> June 2024
+                                                    </h3>
+                                                    <h4 class="timeline-title">CS50x: Introduction to Computer Science</h4>
+                                                    <p class="timeline-text">Finished the introductory course of Harvard University's Introduction to Computer Science.
+                                                        This course built my foundational knowledge in computer science where I learned knowledge in Algorithms, Data Structures, C, Python, Flask Framework, HTML, CSS, Javascript, and SQL.
+                                                        <br> 
+                                                        <br><a href="https://github.com/chrixcrusher/EDify_Extension" target="_blank" class="c50x-link">CS50x GitHub final project repository</a>
+                                                        <br><a href="https://certificates.cs50.io/0e1bc99e-70a6-4d9c-a6be-a531917cf965.pdf?size=letter" target="_blank" class="c50x-link">CS50x Certificate of Completion</a>
+                                                    </p>
+                                                </div>
+                                                <!-- ========== timeline item ========== -->
+                                                <div class="timeline-item">
+                                                    <div class="circle-dot"></div>
+                                                    <h3 class="timeline-date">
+                                                        <i class="fa fa-calendar"></i> June 2024
+                                                    </h3>
+                                                    <h4 class="timeline-title">CS50p: Introduction to Computer Science with Python</h4>
+                                                    <p class="timeline-text">Finished the introductory course of Harvard University's Introduction to Computer Science with Python.
+                                                        This course builds my foundational knowledge in computer science using the most popular language, Python. 
+                                                        <br> 
+                                                        <br><a href="https://github.com/chrixcrusher/Complimentify" target="_blank" class="c50x-link">CS50p GitHub final project repository</a>
+                                                        <br><a href="https://certificates.cs50.io/0e1bc99e-70a6-4d9c-a6be-a531917cf965.pdf?size=letter" target="_blank" class="c50x-link">CS50p Certificate of Completion</a>
+                                                    </p>
+                                                </div>
+                                                <!-- ========== timeline item ========== -->
+                                                <div class="timeline-item">
+                                                    <div class="circle-dot"></div>
+                                                    <h3 class="timeline-date">
+                                                        <i class="fa fa-calendar"></i> June 2024
+                                                    </h3>
+                                                    <h4 class="timeline-title">CIP: Stanford University's Code in Place</h4>
+                                                    <p class="timeline-text">Finished the introductory course of Stanford University's Introduction to Computer Science. 
+                                                        This course built my foundational knowledge in computer science where I learned knowledge in Algorithms, Data Structures, C, Python, Flask Framework, HTML, CSS, Javascript, and SQL.
+                                                        <br> 
+                                                        <br><a href="https://github.com/chrixcrusher/Complimentify" target="_blank" class="c50x-link">CIP GitHub final project repository</a>
+                                                        <br><a href="#" target="_blank" class="c50x-link">CIP Certificate of Completion</a>
+                                                    </p>
+                                                </div>
+                                                <!-- ========== timeline item ========== -->
+                                                <div class="timeline-item">
+                                                    <div class="circle-dot"></div>
+                                                    <h3 class="timeline-date">
+                                                        <i class="fa fa-calendar"></i> June 2024
+                                                    </h3>
+                                                    <h4 class="timeline-title">freeCodeCamp's Responsive Web Design</h4>
+                                                    <p class="timeline-text">Finished the freeCodeCamp's basic course in responsive web design which is mainly focused in creative responsive web pages using HTML and CSS.
+                                                        <br>
+                                                        <br><a href="https://www.freecodecamp.org/certification/fcc3d695264-774f-4c64-890b-632ff188914a/responsive-web-design" target="_blank" class="c50x-link">Responsive Web Design Certificate of Completion</a>
+                                                    </p>
+                                                </div>                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- ========== About Section End ========== -->
+
+            <!-- ========== Service Section Start ========== -->
+            <section class="service section" id="service">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title padd-15">
+                            <h2>Services</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <!-- ========== Service Item Start ========== -->
+                        <div class="service-item padd-15">
+                            <div class="service-item-inner">
+                                <div class="icon">
+                                    <i class="fa fa-palette"></i>
+                                </div>
+                                <h4>Web Design</h4>
+                                <p>Possesses extensive knowledge in HTML, CSS, and JavaScript for website design, including frameworks such as Bootstrap & React. Skilled in creating responsive, user-friendly interfaces and developing dynamic web applications.
+                                    <br>  
+                                    <br>  
+                                </p>
+                            </div>
+                        </div>
+                        <!-- ========== Service Item End ========== -->
+                         <!-- ========== Service Item Start ========== -->
+                        <div class="service-item padd-15">
+                            <div class="service-item-inner">
+                                <div class="icon">
+                                    <i class="fa fa-laptop-code"></i>
+                                </div>
+                                <h4>Web Application</h4>
+                                <p>Proven ability to create robust, scalable web applications using Python and JavaScript, with a specialization in the Django framework for efficient development and deployment.
+                                    <br>   
+                                    <br>  
+                                    <br>  
+                                </p>
+                            </div>
+                        </div>
+                        <!-- ========== Service Item End ========== -->
+                        <!-- ========== Service Item Start ========== -->
+                        <div class="service-item padd-15">
+                            <div class="service-item-inner">
+                                <div class="icon">
+                                    <i class="fa fa-search"></i>
+                                </div>
+                                <h4>Manual Testing</h4>
+                                <p>Proficient in manual testing, including writing test scripts, detecting and reporting bugs, and using Jira for issue tracking. Skilled in creating detailed test plans and ensuring software quality through systematic testing.
+                                    <br>
+                                    <br>
+                                </p>
+                            </div>
+                        </div>
+                        <!-- ========== Service Item End ========== -->
+                         <!-- ========== Service Item Start ========== -->
+                        <div class="service-item padd-15">
+                            <div class="service-item-inner">
+                                <div class="icon">
+                                    <i class="fa fa-project-diagram"></i>
+                                </div>
+                                <h4>Project Management</h4>
+                                <p>Skilled in managing projects from start to finish, including planning, resource allocation, and team coordination. Proven ability to deliver high-quality results on time & within scope. Adept at identifying & mitigating risks to ensure successful project outcomes.</p>
+                            </div>
+                        </div>
+                        <!-- ========== Service Item End ========== -->
+                        <!-- ========== Service Item Start ========== -->
+                        <div class="service-item padd-15 ">
+                            <div class="service-item-inner">
+                                <div class="icon">
+                                    <i class="fa fa-headset"></i>
+                                </div>
+                                <h4>Technical Support</h4>
+                                <p>Provide high-quality support for technical issues, adept at diagnosing problems & offering effective solutions. Skilled in collaborating with engineering teams to enhance support efficiency.
+                                    <br>  
+                                    <br>  
+                                    <br>  
+                                </p>
+                            </div>
+                        </div>
+                        <!-- ========== Service Item End ========== -->
+                        <!-- ========== Service Item Start ========== -->
+                        <div class="service-item padd-15">
+                            <div class="service-item-inner">
+                                <div class="icon">
+                                    <i class="fa fa-flask"></i>
+                                </div>
+                                <h4>Research & Development</h4>
+                                <p>Leveraging cutting-edge R&D expertise to drive innovation, solve complex problems, and create impactful solutions. Skilled in analyzing trends, testing prototypes, and translating findings into actionable strategies.
+                                    <br>
+                                    <br>
+                                </p>
+                            </div>
+                        </div>
+                        <!-- ========== Service Item End ========== -->
+                    </div>
+                </div>
+            </section>
+            <!-- ========== Service Section End ========== -->
+
+            <!-- ========== Portfolio Section Start ========== -->
+            <section class="portfolio section" id="portfolio">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title padd-15">
+                            <h2>Portfolio</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="portfolio-heading padd-15">
+                            <h2>My Latest Projects :</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <!-- ===== portfolio item start ===== -->
+                         <div class="portfolio-item padd-15">
+                            <div class="portfolio-item-inner shadow-dark carousel">
+                                <div class="portfolio-img carousel-images">
+                                    <img src="images/6143298006909304679.jpg" alt="">
+                                    <img src="images/6143298006909304680.jpg" alt="">
+                                </div>
+                                <button class="prev-btn">&#10094;</button>
+                                <button class="next-btn">&#10095;</button>
+                                <div class="portfolio-info">
+                                    <h4>EDify_Extension</h4>
+                                    <p>This a chrome extension to encrypt and decrypt messages.</p>
+                                    <p><a href="https://youtu.be/mjRhRe_X9dk" target="_blank">Click here</a> to watch YouTube explanation how to use it.</p>
+                                </div>
+                            </div>
+                         </div>
+                        <!-- ===== portfolio item end ===== -->
+
+                        <!-- ===== portfolio item start ===== -->
+                        <div class="portfolio-item padd-15">
+                            <div class="portfolio-item-inner shadow-dark carousel">
+                                <div class="portfolio-img carousel-images">
+                                    <img class="clickable-img"src="images/photo_6309882221904903600_w.jpg" alt="">
+                                    <img class="clickable-img" src="images/photo_6309882221904903601_w.jpg" alt="">
+                                    <img class="clickable-img" src="images/photo_6309882221904903602_w.jpg" alt="">
+                                </div>
+                                <button class="prev-btn">&#10094;</button>
+                                <button class="next-btn">&#10095;</button>
+                                <div class="portfolio-info">
+                                    <h4>SyncStock</h4>
+                                    <p>This a inventory management web application.</p>
+                                    <p><a href="https://youtu.be/Rg-T9IVA-aQ" target="_blank">Click here</a> to watch YouTube explanation how to use it.</p>
+                                </div>
+                            </div>
+                         </div>
+                        <!-- ===== portfolio item end ===== -->
+                    </div>
+                </div>               
+            </section>
+            <!-- ========== Portfolio Section End ========== -->
+
+            <!-- ========== Contact Section Start ========== -->
+             <section class="contact section" id="contact">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title padd-15">
+                            <h2>Contact Me</h2>
+                        </div>
+                    </div>
+                    <h3 class="contact-title">Do you have any questions?</h3>
+                    <h4 class="contact-sub-title">I'M AT YOUR SERVICE</h4>
+                    <div class="row">
+                        <!-- ========== Contact Info Item Start ========== -->
+                        <div class="contact-info-item padd-15">
+                            <div class="icon"><i class="fa fa-phone"></i></div>
+                            <h4>Call Me On:</h4>
+                            <p>+63 992 448 6145</p>
+                        </div>
+                        <!-- ========== Contact Info Item End ========== -->
+                        <!-- ========== Contact Info Item Start ========== -->
+                        <div class="contact-info-item padd-15">
+                            <div class="icon"><i class="fa fa-envelope"></i></div>
+                            <h4>Email Me On:</h4>
+                            <p><a href="mailto:christianrpaje.work@gmail.com">christianrpaje.work@gmail.com</a></p>
+                        </div>
+                        <!-- ========== Contact Info Item End ========== -->
+                        <!-- ========== Contact Info Item Start ========== -->
+                        <div class="contact-info-item padd-15">
+                            <div class="icon"><i class="fa fa-map-marker-alt"></i></div>
+                            <h4>Office:</h4>
+                            <p><a href="https://maps.app.goo.gl/6r5vuNRD7BTVZmxc7">Caloocan City, NCR, Philippines</a></p>
+                        </div>
+                        <!-- ========== Contact Info Item End ========== -->
+                        <!-- ========== Contact Info Item Start ========== -->
+                        <div class="contact-info-item padd-15">
+                            <div class="icon"><i class="fa fa-globe"></i></div>
+                            <h4>Personal webpage:</h4>
+                            <p><a href="https://chrixcrusher.github.io/chrstnrpj/">https://chrixcrusher.github.io/chrstnrpj/</a></p>
+                        </div>
+                        <!-- ========== Contact Info Item End ========== -->
+                    </div>
+                    <h3 class="contact-title padd-15">SEND ME AN EMAIL</h3>
+                    <h4 class="contact-sub-title padd-15">REST ASSURE THAT I WILL REPLY TO YOUR MESSAGE</h4>
+                    <!-- ===== Contact Form ===== -->
+                    <div id="myForm">
+                        <div class="contact-form padd-15">
+                            <div class="row">
+                                <div class="form-item col-6 padd-15">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Enter your name" id="name_f" required>
+                                    </div>
+                                </div> 
+                                <div class="form-item col-6 padd-15">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Enter your email" id="email_f" required>
+                                    </div>
+                                </div>                          
+                            </div>
+                            <div class="row">
+                                <div class="form-item col-12 padd-15">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Subject" id="subject_f" required>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-item col-12 padd-15">
+                                    <div class="form-group">
+                                        <textarea name="" class="form-control" placeholder="Message" id="message_f"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-item col-12 padd-15">
+                                    <button class="btn" onclick="sendMail()">Send Message</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+             </section>
+            <!-- ========== Contact Section End ========== -->
+
+        </div>
+        <!-- ========== Main Content End ========== -->
+    </div>
+    <!-- ========== Main Container End ========== -->
+
+    <!-- ========== Style Switcher Start ========== -->
+    <div class="style-switcher">
+        <div class="style-switcher-toggler s-icon">
+            <i class="fas fa-cog fa-spin"></i>
+        </div>
+        <div class="day-night s-icon">
+            <i class="fas "></i>
+        </div>
+        <h4>Theme Colors</h4>
+        <div class="colors">
+            <span class="color-1" onclick="switchTheme('color-1')"></span>
+            <span class="color-2" onclick="switchTheme('color-2')"></span>
+            <span class="color-3" onclick="switchTheme('color-3')"></span>
+            <span class="color-4" onclick="switchTheme('color-4')"></span>
+            <span class="color-5" onclick="switchTheme('color-5')"></span>
+        </div>
+    </div>
+    <!-- =========Style Switcher End ========== -->
+
+    <!-- ========== JS Files ========== -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js" integrity="sha512-+2pW8xXU/rNr7VS+H62aqapfRpqFwnSQh9ap6THjsm41AxgA0MhFRtfrABS+Lx2KHJn82UOrnBKhjZOXpom2LQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/script.js"></script>
+    <script src="js/style-switcher.js"></script> 
+</body>
+</html>
