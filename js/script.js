@@ -8,7 +8,7 @@ var typed = new Typed(".typing", {
 })
 
 var typed = new Typed(".typing-2", {
-    strings: ["", "I'm here to help you.", "I'm here to provide solution.", "I'm excited to work with you.", "So, how can I help you?"],
+    strings: ["", "I fell in love with web development.", "I love to learn new things everyday.", "So, how can I help you?"],
     typeSpeed: 100,
     backSpeed: 60,
     loop: true
