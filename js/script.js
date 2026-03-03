@@ -96,20 +96,8 @@ const nav = document.querySelector(".nav"),
         }
 
 
-    // Personalization 
-    document.getElementById("dl-cv").addEventListener("click", function() {
-        var fileUrl = "cv/crp-cv.pdf"; // Replace with the actual file URL
-        var fileName = "myCV.pdf"; // Replace with the desired file name
-      
-        var link = document.createElement("a");
-        link.href = fileUrl;
-        link.download = fileName;
-        link.click();
-      });
-
-
 // Initialize EmailJS SDK
-emailjs.init("SsIFlJQdwV4ZZXWJn");  // Use only the public key
+emailjs.init("8Vo9sLAdv7-qBNu_w");  // Use only the public key
 
 function sendMail() {
     var params = {
